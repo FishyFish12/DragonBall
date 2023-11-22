@@ -31,8 +31,6 @@ public:
     void changeState();
     
     friend std::ostream& operator<<(std::ostream& os, const Book& book);
-    
-    //bool validDate(Date::Date mm);
 
     void setISBN(std::string isbn);
 
