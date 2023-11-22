@@ -34,8 +34,8 @@ Data::Data(int d, int m, int y)
 {   
     check(d,m,y);
     day = d;
-    month = y;
-    year = m;
+    month = m;
+    year = y;
 }
 
 Data::Data() 
@@ -78,6 +78,7 @@ void Data::printDate() const
 {
     std::cout << day << "/" << month << "/" << year << std::endl;
 }
+
 
 
 
