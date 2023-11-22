@@ -4,12 +4,12 @@
 
 int main() 
 {
-    Data dateB1(1,1,2000);
+    Data dateB1;
     Data dateB2(2,2,2003);
     Data dateB3(3,3,2006);
-    Book myBook("887-521-837-4", "David", "Foster Wallace","Una cosa divertente che non farò mai più" ,dateB1, true);
-    Book myBook1("887-511-237-4", "Carlo", "Mariconda","Una matematica divertente che non farò mai più" ,dateB2, true);
-    Book myBook2("887-521-837-4", "David", "Foster Wallace","Una cosa divertente che non farò mai più" ,dateB3, true);
+    Book myBook("887-521-837-4", "Una cosa divertente che non farò mai più", "David","FosterWallace" ,dateB1, true);
+    Book myBook1("887-511-237-4", "Una matematica divertente che non farò mai più", "Carlo","Mariconda" ,dateB2, true);
+    Book myBook2("887-521-837-4", "Una cosa divertente che non farò mai più", "David","FosterWallace" ,dateB1, true);
     myBook.checkState();  // TEST CHECK STATE
     myBook.changeState(); //TEST CHANGE STATE
     myBook.checkState();  // TEST CHECK STATE
@@ -32,4 +32,6 @@ int main()
     
     return 0;
 }
+
+
 
